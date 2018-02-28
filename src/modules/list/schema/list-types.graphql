@@ -1,0 +1,76 @@
+type ListUpgrades {
+  amd: [String]
+  bomb: [String]
+  cannon: [String]
+  cargo: [String]
+  crew: [String]
+  ept: [String]
+  hardpoint: [String]
+  illicit: [String]
+  missile: [String]
+  mod: [String]
+  samd: [String]
+  system: [String]
+  team: [String]
+  tech: [String]
+  title: [String]
+  torpedo: [String]
+  turret: [String]
+}
+
+input ListUpgradesInput {
+  amd: [String]
+  bomb: [String]
+  cannon: [String]
+  cargo: [String]
+  crew: [String]
+  ept: [String]
+  hardpoint: [String]
+  illicit: [String]
+  missile: [String]
+  mod: [String]
+  samd: [String]
+  system: [String]
+  team: [String]
+  tech: [String]
+  title: [String]
+  torpedo: [String]
+  turret: [String]
+}
+
+type ListPilot {
+  name: String!
+  ship: String!
+  upgrades: ListUpgrades
+  multisectionId: Int
+  points: Int
+}
+
+input ListPilotInput {
+  name: String!
+  ship: String!
+  upgrades: ListUpgradesInput
+  multisectionId: Int,
+  points: Int
+}
+
+type List {
+  faction: String!
+  pilots: [ListPilot]!
+  name: String
+  description: String
+  obstacles: [String]
+  damagedeck: String
+  points: Int
+}
+
+input ListInput {
+  faction: String!
+  pilots: [ListPilotInput]!
+  name: String
+  description: String
+  obstacles: [String]
+  damagedeck: String
+  points: Int
+  version: String
+}

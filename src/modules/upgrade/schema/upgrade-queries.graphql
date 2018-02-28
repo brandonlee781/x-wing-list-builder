@@ -1,0 +1,3 @@
+type Query {
+  allUpgrades(slot: String): [Upgrade]!
+}

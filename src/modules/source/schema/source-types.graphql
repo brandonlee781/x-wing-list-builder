@@ -1,0 +1,23 @@
+type SourceContent {
+  pilots: [String]
+  ships: [String]
+  upgrades: [String]
+}
+
+type Source {
+  id: String
+  xws: String
+  name: String
+  wave: Int
+  dataId: Int
+  image: String
+  thumb: String
+  content: SourceContent
+  createdAt: String
+  updatedAt: String
+}
+
+input AllSourcesInput {
+  xws: String
+  wave: Int
+}

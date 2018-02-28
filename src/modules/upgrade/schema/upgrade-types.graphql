@@ -1,0 +1,30 @@
+type UpgradeGrant {
+  type: String
+  name: String
+  value: Int
+}
+
+type Upgrade {
+  id: String!
+  xws: String!
+  name: String!
+  slot: String!
+  text: String!
+  points: Int!
+  attack: Int
+  range: String
+  energy: String
+  faction: String
+  unique: Boolean
+  limited: Boolean
+  size: [String]
+  ship: [String]
+  image: String
+  grants: [UpgradeGrant]
+  dataId: Int
+}
+
+input AllUpgradesInput {
+  xws: String
+  slot: String
+}

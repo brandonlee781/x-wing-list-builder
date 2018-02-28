@@ -1,0 +1,1 @@
+Web server designed to take in a XWS compiant Star Wars X-Wing TMG list and return the necissary X-Wing products a person would need to purchase to build that list. I am working on the reverse, ability to set which products a user already owns and give the most popular lists the user can assemble, but that's really hard...that's what she said.

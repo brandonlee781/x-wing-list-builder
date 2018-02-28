@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2015",
+      "lib": ["esnext.asynciterable", "esnext"],
+      "noImplicitAny": false,
+      "outDir": "./dist",
+      "sourceMap": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+  },
+  "include": [
+      "src/**/*",
+      "typings/**/*.d.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}
